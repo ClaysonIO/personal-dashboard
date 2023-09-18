@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+# My Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an incredibly simple PWA-based app that lets me install an app on my phone where I can store a short amount of text. I list out my goals within it, and then use the Digital Wellbeing features of my phone to automatically open the app in the morning. Having a distraction-free app decreases the likelihood that I'll get sucked into something else. 
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+If you want to run this, you'll need to do the following:
+1. Clone the repo
+2. Run `npm install`
+3. Run `npm run dev` to test it locally
 
-## Expanding the ESLint configuration
+## Deploying
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I use Netlify to deploy this. It's a static site, so it's pretty easy to deploy.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Create a new site in Netlify
+2. Link it to your GitHub repo
+3. Leave everything else as default
